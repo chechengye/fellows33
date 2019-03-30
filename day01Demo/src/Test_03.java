@@ -11,6 +11,7 @@ public class Test_03 {
         int s = a / 10 % 10;
         int g = a % 10;
 
+
         System.out.println("和: " + (w + q + b + s + g));
     }
 }
