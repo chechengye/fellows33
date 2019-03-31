@@ -1,9 +1,5 @@
 import java.util.Arrays;
 
-/**
- * 冒泡排序
- */
-
 public class Test_06 {
 
     public static void main(String[] args) {
