@@ -33,6 +33,7 @@ public class Test_03 {
                 for(int i = 0 ; i < userRedBalls.length ; i++){
                     userRedBalls[i] = sc.next();
                 }
+                System.out.println("请输入篮球!");
                 userBlueBall = sc.next();
                 break;
             default:
@@ -44,6 +45,19 @@ public class Test_03 {
         Arrays.sort(userRedBalls);
         System.out.println("用户红球:" + Arrays.toString(userRedBalls));
 
+
+        isReward(sysRedBalls , sysBlueBall , userRedBalls , userBlueBall);
+    }
+
+    /**
+     * 判断是否中奖
+     * @param sysRedBalls
+     * @param sysBlueBall
+     * @param userRedBalls
+     * @param userBlueBall
+     */
+    private static void isReward(String[] sysRedBalls ,String sysBlueBall , String[] userRedBalls , String userBlueBall ){
+
         int count = 0;
         for(int i = 0 ; i< sysRedBalls.length ; i++){
             for (int j = 0 ; j < userRedBalls.length ; j++){
@@ -52,7 +66,6 @@ public class Test_03 {
                 }
             }
         }
-
         if(sysBlueBall.equals(userBlueBall)){
             System.out.println("六等奖！");
         }else if(count == 4){
@@ -60,8 +73,13 @@ public class Test_03 {
         }else{
             System.out.println("很遗憾，未中奖！");
         }
-
     }
+
+    /**
+     * 获取红球
+     * @param pool
+     * @return
+     */
     private static String[] getRedBalls(String[] pool){
         String[] redBalls = new String[6];
         //去重
@@ -86,6 +104,7 @@ public class Test_03 {
      */
     public static String[] getPool(){
         String[] pool = new String[33];
+
         for(int i = 1 ; i<= 33 ; i++){
             if(i < 10){
                 pool[i-1] = "0" + i;
