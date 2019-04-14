@@ -17,12 +17,13 @@ public class Test_06 {
 
     public static void function(AnimalDemo a){
 
-        if(a instanceof Pig){
+        ((Pig) a).sleep();
+        /*if(a instanceof Pig){
             ((Pig) a).sleep();
         }else if(a instanceof  Bird){
             ((Bird) a).fly();
             a.eat();
-        }
+        }*/
     }
 }
 
