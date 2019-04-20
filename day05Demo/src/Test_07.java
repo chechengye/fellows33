@@ -9,7 +9,7 @@ public class Test_07 {
         Locale l1 = new Locale("zh","CN");
         Locale l2 = new Locale("en" , "US");
         Locale l3 = Locale.getDefault();
-        ResourceBundle rb = ResourceBundle.getBundle("com/weichuang/info" , l1);
+        ResourceBundle rb = ResourceBundle.getBundle("com/weichuang/info" , l2);
         String str = rb.getString("system.name");
         System.out.println(str);
         System.out.println(rb.getString("login.username"));
