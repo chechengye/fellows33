@@ -36,13 +36,40 @@ public class Test_06 {
 
         /*System.out.println(str4.toLowerCase());
         System.out.println(str4.toUpperCase());*/
-        System.out.println(str4.trim());
+ /*       System.out.println(str4.trim());
         String s = "";
         s = s + "abs";
         s = s + "123";
         System.out.println(s);
         StringBuffer sb = new StringBuffer(30);
         sb.append("abs").append("12fsdfdsfsfdsfdsdf434343sdfsdsf3");
+        System.out.println(sb.toString());*/
+        StringBuffer sb = new StringBuffer(30);
+        sb.append("abs").append("12fsdfdsfsfdsfdsdf434343sdfsdsf3");
+        sb.delete(0 , 5);
+        sb.insert(6 , "****");
+
+        sb.reverse();
+
         System.out.println(sb.toString());
+
+        StringBuffer sb2 = new StringBuffer(new CharSequence() {
+            @Override
+            public int length() {
+                return 0;
+            }
+
+            @Override
+            public char charAt(int index) {
+                return 0;
+            }
+
+            @Override
+            public CharSequence subSequence(int start, int end) {
+                return null;
+            }
+        });
+        System.out.println(sb2.toString());
+
     }
 }
