@@ -1,14 +1,26 @@
+import com.weichuang.tools.MD5Utils;
+
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Base64;
+import java.util.Scanner;
 
 public class Test_07 {
 
     public static void main(String[] args) {
-        String psd = "admDSDSin+123/456"; //pmq7VoTEWWLYh1ZPCDRujQ==
-        try {
+        String psd = "admd123456"; //pmq7VoTEWWLYh1ZPCDRujQ==
+
+        String md5Str = "X3J0G/h4XOuS0cO2ADO3vQ==";
+
+        Scanner sc = new Scanner(System.in);
+        String str = MD5Utils.getMD5String(sc.next());
+
+        if(md5Str.equals(str)){
+            System.out.println("密码正确");
+        }
+        /*try {
             MessageDigest md = MessageDigest.getInstance("md5");
             byte[] bytes = psd.getBytes("utf-8");
             byte[] bytes1 = md.digest(bytes);
@@ -18,6 +30,8 @@ public class Test_07 {
             System.out.println(str);
         } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
             e.printStackTrace();
-        }
+        }*/
+        System.out.println(MD5Utils.getMD5String(psd));
+
     }
 }
