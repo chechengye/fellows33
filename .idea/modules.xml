@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/day04Demo/day04Demo.iml" filepath="$PROJECT_DIR$/day04Demo/day04Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/day05Demo/day05Demo.iml" filepath="$PROJECT_DIR$/day05Demo/day05Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/day06Demo/day06Demo.iml" filepath="$PROJECT_DIR$/day06Demo/day06Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07Demo/day07Demo.iml" filepath="$PROJECT_DIR$/day07Demo/day07Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dayTest/dayTest.iml" filepath="$PROJECT_DIR$/dayTest/dayTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/fellows33.iml" filepath="$PROJECT_DIR$/fellows33.iml" />
     </modules>
   </component>
