@@ -37,10 +37,9 @@ public class Test_02 {
     }
 
     private static String[] testSupplier(int num , Supplier<String[]> s){
-        for(int i = 0 ; i< num ; i++){
-            return s.get();
-        }
-        return null;
+        /*for(int i = 0 ; i< num ; i++){
+        }*/
+        return s.get();
     }
 
     private static String testFunction(String val , Function<String , String> f){
