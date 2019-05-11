@@ -1,4 +1,4 @@
-package com.weichuang.exception;
+package weichuang.exception;
 
 public class MyException extends RuntimeException{
 

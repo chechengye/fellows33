@@ -1,4 +1,4 @@
-package com.weichuang.utils;
+package weichuang.utils;
 
 public class Test_01 {
     void eat(){

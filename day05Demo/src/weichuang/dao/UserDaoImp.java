@@ -1,7 +1,7 @@
-package com.weichuang.dao;
+package weichuang.dao;
 
-import com.weichuang.exception.MyException;
-import com.weichuang.pojo.UserBean;
+import weichuang.exception.MyException;
+import weichuang.pojo.UserBean;
 
 public class UserDaoImp implements UserDao{
     @Override

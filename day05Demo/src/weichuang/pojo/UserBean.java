@@ -1,4 +1,4 @@
-package com.weichuang.pojo;
+package weichuang.pojo;
 
 public class UserBean {
 

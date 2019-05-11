@@ -1,8 +1,7 @@
-package com.weichuang.service;
+package weichuang.service;
 
-import com.weichuang.dao.UserDao;
-import com.weichuang.dao.UserDaoImp;
-import com.weichuang.pojo.UserBean;
+import weichuang.dao.UserDaoImp;
+import weichuang.pojo.UserBean;
 
 import java.util.Scanner;
 
