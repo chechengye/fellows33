@@ -1,10 +1,5 @@
-import com.weichuang.tools.MD5Utils;
+import weichuang.tools.MD5Utils;
 
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.Base64;
 import java.util.Scanner;
 
 public class Test_07 {

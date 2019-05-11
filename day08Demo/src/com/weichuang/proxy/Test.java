@@ -10,4 +10,9 @@ public class Test {
         IFly iFly = (IFly)Proxy.newProxyInstance(p.getClass().getClassLoader(), p.getClass().getInterfaces(), proxy);
         iFly.fly();
     }
+
+    @org.junit.Test
+    public void testAdd(){
+        System.out.println("测试junit");
+    }
 }

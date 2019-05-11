@@ -1,4 +1,4 @@
-package com.weichuang.tools;
+package weichuang.tools;
 
 import java.text.DecimalFormat;
 

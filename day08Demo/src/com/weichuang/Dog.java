@@ -4,6 +4,15 @@ public class Dog {
     private int age;
     private String name;
     public String weight;
+    private Boolean isFlag;
+
+    public Boolean isFlag() {
+        return isFlag;
+    }
+
+    public void setFlag(Boolean flag) {
+        isFlag = flag;
+    }
 
     private void setWeight(String weight){
         this.weight = weight;

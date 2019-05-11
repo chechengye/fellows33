@@ -1,6 +1,4 @@
-import com.weichuang.tools.DecimalFormatUtils;
-
-import java.text.DecimalFormat;
+import weichuang.tools.DecimalFormatUtils;
 
 public class Test_06 {
 

@@ -1,4 +1,4 @@
-package com.weichuang;
+package weichuang;
 
 public class Dog{
     private int age;
