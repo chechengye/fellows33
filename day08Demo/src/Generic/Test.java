@@ -2,7 +2,7 @@ package Generic;
 
 import com.weichuang.proxy.Person;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Test {
 
@@ -38,6 +38,29 @@ public class Test {
         list[i] = list[j];
         list[j] = temp;
         return list;
+    }
+
+    @org.junit.Test
+    public void testQt(){
+        School<Student> sc = new School<>(new Student("10011"));
+        System.out.println(sc.getStudent().getCore());
+        Map<Integer , String> map = new HashMap<>();
+        map.put(1 , "张三");
+        map.put(2 , "李四");
+
+        Set<Map.Entry<Integer, String>> entries = map.entrySet();
+        entries.forEach((s)->{
+            System.out.println(s.getValue());
+        });
+        Iterator<Map.Entry<Integer, String>> iterator = entries.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+        for(Map.Entry e : entries){
+            System.out.println(e.getValue());
+        }
+
+
     }
 
 }
